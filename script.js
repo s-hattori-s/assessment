@@ -27,7 +27,7 @@ btn.onclick = () => {
 
     name.innerText = input.value
     result.innerText = `あなたの診断結果:${answers[sumCharCode(input.value) % answers.length]}`.replaceAll('###userName###', input.value)
-    let tweet = document.getElementById("twitter-card")
+    let tweet = document.getElementById("twitter-card");
     tweet.innerText = '';
     tweet.appendChild(name);
     tweet.appendChild(result);
